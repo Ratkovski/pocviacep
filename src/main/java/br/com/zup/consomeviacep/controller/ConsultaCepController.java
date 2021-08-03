@@ -1,11 +1,7 @@
 package br.com.zup.consomeviacep.controller;
 
-import br.com.zup.consomeviacep.domain.Endereco;
 import br.com.zup.consomeviacep.dto.CepDto;
-import br.com.zup.consomeviacep.dto.EnderecoDto;
-import br.com.zup.consomeviacep.mapper.EnderecoMapper;
 import br.com.zup.consomeviacep.service.EnderecoService;
-import br.com.zup.consomeviacep.service.ViaCepClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

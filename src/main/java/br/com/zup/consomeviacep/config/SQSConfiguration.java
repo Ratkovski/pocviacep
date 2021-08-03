@@ -14,7 +14,7 @@ public class SQSConfiguration {
     @Bean
     public AmazonSQS amazonSQS() {
         return AmazonSQSClientBuilder.standard()
-                .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:41159", "sa-east"))
+                .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:4566", "sa-east"))
                 .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("fakekey", "fakeacesskey")))
                 .build();
     }

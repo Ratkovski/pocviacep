@@ -15,6 +15,11 @@ public class PublicadorDeEndereco {
     private final AmazonSQS amazonSQS;
     private final ObjectMapper objectMapper;
 
+    /**
+     * @SneakyThrows pode ser usado para lançar exceções verificadas
+     * sem realmente declarar isso na throws cláusula do seu método
+     */
+
     @SneakyThrows
     public void publicar(final Endereco endereco) {
         String queueUrl = amazonSQS.getQueueUrl("fila_enderecos").getQueueUrl();

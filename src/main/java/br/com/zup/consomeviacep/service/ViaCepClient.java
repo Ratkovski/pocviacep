@@ -1,6 +1,5 @@
 package br.com.zup.consomeviacep.service;
 
-import br.com.zup.consomeviacep.domain.Endereco;
 import br.com.zup.consomeviacep.dto.EnderecoDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
