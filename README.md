@@ -1,5 +1,20 @@
 # pocviacep
 
+
+https://viacep.com.br/
+
+
+Faça um clone deste projeto e deste https://github.com/Ratkovski/pocviacepconsumer para que ambos se comuniquem:
+
+Esta aplicação tem por finalidade fazer uma consulta no viacep pegar as informações de determinado cep e publicá-las com o amazon sqs em filas de mensagens que armazenam mensagens esperando processamento. 
+
+E a aplicação https://github.com/Ratkovski/pocviacepconsumer terá como objetivo escutar e consumir estes dados gravando no banco.
+
+Dentro do projeto pocviacep rode o comando do docker para subir as configuraçoes do localstack:
+```
+docker-compose up  
+```
+
 Baixe e instale a aws cli: \
 https://docs.aws.amazon.com/pt_br/cli/latest/userguide/install-cliv1.html
 
@@ -44,7 +59,6 @@ Listando os dados do banco:
 aws dynamodb scan --table-name enderecos --endpoint-url http://localhost:4566
 ```
 
-https://viacep.com.br/
 
 
 Exempo de requisição:
